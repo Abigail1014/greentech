@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Aterrizaje de Green Tech Bolivia</title>
+    <!-- Incluir Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Incluir Google Fonts para una tipografía moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Aplicar la fuente globalmente */
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        /* Patrón de fondo sutil */
+        .cultural-pattern {
+            background-image: radial-gradient(rgba(34, 197, 94, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        /* Animación suave para elementos destacados */
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .animate-bounce-slow { animation: bounce-slow 3s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-lime-300 selection:text-slate-950 cultural-pattern">
+
+    <!-- Navegación Superior -->
+    <nav class="border-b border-slate-200 bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-2xl flex items-center justify-center p-1 border-2 border-slate-900 bg-lime-300 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+                    <!-- Logo Estilizado de Green Tech -->
+                    <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 15 C15 70, 40 85, 85 85 C85 40, 70 15, 15 15 Z" fill="#bef264" stroke="#000000" stroke-width="4"/>
+                        <path d="M15 15 L85 85" stroke="#000000" stroke-width="4"/>
+                        <path d="M48 15 L48 85" fill="#22c55e" stroke="#000000" stroke-width="4"/>
+                        <path d="M68 25 L68 85" fill="#14532d" stroke="#000000" stroke-width="4"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-xl tracking-tight text-slate-900 leading-none">GREEN<span class="text-emerald-600">TECH</span></span>
+                    <span class="text-[10px] uppercase tracking-widest text-emerald-700 font-extrabold mt-1">Bolivia 🇧🇴</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-600">
+                <a href="#modelo" class="hover:text-emerald-600 transition">🌿 Modelo</a>
+                <a href="#cocina" class="hover:text-emerald-600 transition">🍳 Cocina</a>
+                <a href="#verduras" class="hover:text-emerald-600 transition">🥦 Verduras Frescas</a>
+                <a href="#arma-empaque" class="hover:text-emerald-600 transition">📦 Arma tu Empaque</a>
+                <a href="#inscripcion" class="hover:text-emerald-600 transition">💡 Requisitos</a>
+                <a href="https://www.facebook.com/share/1CJmxtSTKG/" target="_blank" class="text-blue-600 hover:text-blue-700 font-extrabold">👥 Facebook</a>
+            </div>
+            <div>
+                <a href="#login" class="text-slate-950 text-sm font-extrabold px-5 py-2.5 rounded-xl transition shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 flex items-center space-x-2 bg-lime-300 border-2 border-slate-900">
+                    <span>🔒 Mi Cuenta</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Principal -->
+    <section class="relative py-20 md:py-28 px-6 text-center overflow-hidden border-b border-slate-200 bg-slate-50">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center text-left">
+            <div>
+                <div class="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 text-xs font-extrabold px-4 py-1.5 rounded-full border border-emerald-300 mb-6 shadow-sm">
+                    <span>🇧🇴 Orgullo Boliviano • Riberalta, Beni y Todo el País[cite: 5]</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.15] text-slate-900">
+                    Impulsa tu hogar con <span class="text-emerald-600 underline decoration-lime-400">capacitación, cocina y delivery</span>
+                </h1>
+                <p class="text-slate-600 mt-6 text-lg font-normal leading-relaxed">
+                    Conectamos el talento de las productoras y madres bolivianas directamente con los hogares mediante tecnología, entrega de insumos y cocina desde casa.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                    <a href="#inscripcion" class="bg-lime-300 hover:bg-lime-400 text-slate-950 font-extrabold px-8 py-4 rounded-xl shadow-md transition transform hover:scale-105 border-2 border-slate-950 text-center">
+                        💡 Ver Requisitos
+                    </a>
+                    <a href="#arma-empaque" class="bg-white hover:bg-slate-100 text-slate-900 border-2 border-slate-300 font-bold px-8 py-4 rounded-xl transition text-center shadow-sm">
+                        📦 Arma tu Empaque
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ilustración Vectorial: Cocinera con un Plato Lleno de Verduras Frescas -->
+            <div class="bg-white p-6 rounded-3xl border-2 border-slate-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex flex-col items-center justify-center relative">
+                <div class="w-full h-72 flex items-center justify-center">
+                    <svg class="w-full h-full max-h-64" viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" width="280" height="240" rx="20" fill="#f0fdf4" stroke="#000" stroke-width="2"/>
+                        <rect x="50" y="150" width="200" height="80" rx="8" fill="#e2e8f0" stroke="#000" stroke-width="2.5"/>
+                        <ellipse cx="150" cy="180" rx="55" ry="20" fill="#ffffff" stroke="#000" stroke-width="2.5"/>
+                        <ellipse cx="150" cy="180" rx="45" ry="14" fill="#f1f5f9"/>
+                        <circle cx="135" cy="178" r="8" fill="#15803d" stroke="#000" stroke-width="1.5"/>
+                        <circle cx="145" cy="174" r="7" fill="#22c55e" stroke="#000" stroke-width="1.5"/>
+                        <circle cx="158" cy="178" r="8" fill="#ef4444" stroke="#000" stroke-width="1.5"/>
+                        <ellipse cx="152" cy="186" rx="6" ry="4" fill="#f97316" stroke="#000" stroke-width="1.5"/>
+                        <circle cx="150" cy="62" r="22" fill="#fde047" stroke="#000" stroke-width="2.5"/>
+                        <path d="M132 46 Q150 24 168 46 Z" fill="#ffffff" stroke="#000" stroke-width="2.5"/>
+                        <rect x="135" y="44" width="30" height="7" rx="2" fill="#cbd5e1" stroke="#000" stroke-width="2"/>
+                        <circle cx="143" cy="62" r="2" fill="#000"/>
+                        <circle cx="157" cy="62" r="2" fill="#000"/>
+                        <path d="M146 68 Q150 73 154 68" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M128 84 Q150 80 172 84 L185 155 L115 155 Z" fill="#22c55e" stroke="#000" stroke-width="2.5"/>
+                        <rect x="139" y="112" width="22" height="18" rx="4" fill="#ffffff" stroke="#000" stroke-width="2"/>
+                        <path d="M150 125 C148 121, 146 121, 146 119 C146 117, 148 117, 150 120 C152 117, 154 117, 154 119 C154 121, 152 121, 150 125 Z" fill="#ef4444"/>
+                        <circle cx="118" cy="120" r="5" fill="#fde047" stroke="#000" stroke-width="2"/>
+                        <path d="M118 120 L102 110" stroke="#713f12" stroke-width="2.5" stroke-linecap="round"/>
+                        <circle cx="182" cy="120" r="5" fill="#fde047" stroke="#000" stroke-width="2"/>
+                    </svg>
+                </div>
+                <span class="text-xs font-extrabold text-slate-700 bg-lime-100 px-3 py-1 rounded-full border border-slate-900 mt-2">🥗 Tradición, Sabor y Verduras Frescas</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Modelo -->
+    <section id="modelo" class="py-20 px-6 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="font-extrabold text-xs uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3 py-1 rounded-md border border-emerald-300">Ecosistema Green Tech</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mt-2">¿Qué hacemos por ti?</h2>
+                <p class="text-slate-600 mt-3 text-base">Herramientas prácticas para fortalecer tu autonomía económica desde casa.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 1. Capacitación -->
+                <div class="bg-slate-50 rounded-2xl shadow-sm border-2 border-slate-200 p-6 flex flex-col justify-between hover:border-emerald-500 transition">
+                    <div>
+                        <div class="mb-4 flex items-center justify-center bg-white p-3 rounded-2xl border-2 border-slate-900 shadow-sm">
+                            <svg class="w-16 h-16" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#ecfdf5" stroke="#000" stroke-width="2"/>
+                                <rect x="30" y="55" width="40" height="10" rx="2" fill="#22c55e" stroke="#000" stroke-width="2"/>
+                                <rect x="25" y="45" width="50" height="10" rx="2" fill="#10b981" stroke="#000" stroke-width="2"/>
+                                <rect x="28" y="35" width="44" height="10" rx="2" fill="#fde047" stroke="#000" stroke-width="2"/>
+                                <polygon points="50,15 75,25 50,35 25,25" fill="#0f766e" stroke="#000" stroke-width="2"/>
+                                <rect x="62" y="29" width="3" height="8" fill="#000"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-extrabold text-xl text-slate-900 mb-2">1. Capacitación</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Aprende técnicas modernas de producción, cultivo urbano y gestión de negocios digitales con respaldo oficial.</p>
+                    </div>
+                    <button onclick="unirseTema('Capacitación Green Tech')" class="w-full text-slate-950 font-extrabold py-3 px-4 rounded-xl transition shadow-sm text-sm bg-lime-300 hover:bg-lime-400 border-2 border-slate-900">
+                        📖 Pedir Capacitación
+                    </button>
+                </div>
+
+                <!-- 2. Cocina -->
+                <div id="cocina" class="bg-slate-50 rounded-2xl shadow-sm border-2 border-emerald-500 p-6 flex flex-col justify-between hover:border-emerald-600 transition relative">
+                    <div>
+                        <div class="mb-4 flex items-center justify-center bg-white p-3 rounded-2xl border-2 border-slate-900 shadow-sm">
+                            <svg class="w-16 h-16" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#ecfdf5" stroke="#000" stroke-width="2"/>
+                                <circle cx="50" cy="40" r="16" fill="#fde047" stroke="#000" stroke-width="2"/>
+                                <path d="M38 30 Q50 15 62 30 Z" fill="#fff" stroke="#000" stroke-width="2"/>
+                                <circle cx="44" cy="40" r="2" fill="#000"/>
+                                <circle cx="56" cy="40" r="2" fill="#000"/>
+                                <path d="M47 46 Q50 50 53 46" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="35" y="65" width="30" height="15" rx="3" fill="#64748b" stroke="#000" stroke-width="2"/>
+                                <path d="M65 70 L80 65" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+                                <circle cx="45" cy="70" r="3" fill="#22c55e"/>
+                                <circle cx="55" cy="72" r="3" fill="#ef4444"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-extrabold text-xl text-slate-900 mb-2">2. Cocina Artesanal</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Transforma insumos locales en deliciosos platillos y productos tradicionales con calidad y sabor casero.</p>
+                    </div>
+                    <button onclick="unirseTema('Cocina desde Casa')" class="w-full text-slate-950 font-extrabold py-3 px-4 rounded-xl transition shadow-sm text-sm bg-emerald-500 hover:bg-emerald-400 text-white border-2 border-slate-900">
+                        🍳 Más sobre Cocina
+                    </button>
+                </div>
+
+                <!-- 3. Delivery -->
+                <div class="bg-slate-50 rounded-2xl shadow-sm border-2 border-slate-200 p-6 flex flex-col justify-between hover:border-emerald-500 transition relative overflow-hidden">
+                    <div>
+                        <div class="mb-4 flex items-center justify-center bg-white p-3 rounded-2xl border-2 border-slate-900 shadow-sm animate-bounce-slow">
+                            <svg class="w-16 h-16" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#ecfdf5" stroke="#000" stroke-width="2"/>
+                                <circle cx="50" cy="42" r="18" fill="#fde047" stroke="#000" stroke-width="2"/>
+                                <path d="M32 38 Q50 28 68 38 L65 32 Q50 25 35 32 Z" fill="#22c55e" stroke="#000" stroke-width="2"/>
+                                <circle cx="43" cy="42" r="2.5" fill="#000"/>
+                                <circle cx="57" cy="42" r="2.5" fill="#000"/>
+                                <path d="M46 48 Q50 53 54 48" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="30" y="60" width="22" height="28" rx="3" fill="#22c55e" stroke="#000" stroke-width="2"/>
+                                <path d="M36 60 C36 53, 46 53, 46 60" fill="none" stroke="#000" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-extrabold text-xl text-slate-900 mb-2">3. Delivery Animado</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Coordina entregas seguras y puntuales para llevar tus productos directamente a los clientes con una sonrisa.</p>
+                    </div>
+                    <button onclick="unirseTema('Delivery y Envíos')" class="w-full text-slate-950 font-extrabold py-3 px-4 rounded-xl transition shadow-sm text-sm bg-teal-400 hover:bg-teal-300 border-2 border-slate-900">
+                        📦 Más sobre Delivery
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Verduras Frescas -->
+    <section id="verduras" class="py-20 px-6 max-w-5xl mx-auto text-center bg-slate-50 border-b border-slate-200">
+        <span class="font-extrabold text-xs uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3 py-1 rounded-md border border-emerald-300">Cosecha y Salud</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mt-2 mb-4">Verduras y Hortalizas Frescas</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto mb-10 text-base">Insumos 100% orgánicos cultivados por productoras locales para llevar la mejor nutrición directamente a tu cocina[cite: 5].</p>
+
+        <div class="bg-white p-8 rounded-3xl border-2 border-slate-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] max-w-3xl mx-auto flex flex-col items-center">
+            <div class="w-full h-80 flex items-center justify-center mb-6 relative bg-white p-2 rounded-2xl border-2 border-slate-300 shadow-inner overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=800" alt="Variedad de verduras y hortalizas frescas" class="w-full h-full object-cover rounded-xl">
+            </div>
+            <h3 class="font-extrabold text-2xl text-slate-900 mb-2">🥦 Del Huerto a tu Mesa</h3>
+            <p class="text-slate-600 text-sm max-w-lg">Garantizamos calidad, frescura y sabor natural en cada empaque preparado para las familias bolivianas.</p>
+        </div>
+    </section>
+
+    <!-- Sección: Arma tu empaque -->
+    <section id="arma-empaque" class="py-20 px-6 max-w-6xl mx-auto bg-white">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="font-extrabold text-xs uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3 py-1 rounded-md border border-emerald-300">Logística Inteligente</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">Arma tu empaque y nosotros te entregamos la comida y todo lo que necesitas para cocinar desde casa</h2>
+            <p class="text-slate-600 mt-4 text-base">Selecciona tus ingredientes frescos, vegetales y provisiones; nosotros lo empacamos con calidad profesional y te lo llevamos directamente a tu puerta.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="bg-slate-50 p-8 rounded-3xl border-2 border-slate-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-lime-300 rounded-xl flex items-center justify-center font-extrabold text-xl mb-4 border-2 border-slate-900">🛒</div>
+                    <h3 class="font-extrabold text-2xl text-slate-900 mb-3">1. Personaliza tu Pedido</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Elige hortalizas orgánicas, hierbas aromáticas, verduras hidropónicas y kits listos para cocinar tus recetas favoritas.</p>
+                </div>
+                <button onclick="unirseTema('Armar mi Empaque de Comida')" class="w-full text-slate-950 font-extrabold py-3.5 px-4 rounded-xl transition shadow-sm text-sm bg-lime-300 hover:bg-lime-400 border-2 border-slate-900 flex items-center justify-center space-x-2">
+                    <span>📦 Quiero armar mi empaque</span>
+                </button>
+            </div>
+
+            <div class="bg-slate-50 p-8 rounded-3xl border-2 border-slate-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-emerald-400 text-slate-950 rounded-xl flex items-center justify-center font-extrabold text-xl mb-4 border-2 border-slate-900">🛵</div>
+                    <h3 class="font-extrabold text-2xl text-slate-900 mb-3">2. Recibe en Casa</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Te entregamos todo listo en empaques ecológicos profesionales, optimizando tu tiempo para que solo te preocupes por cocinar y disfrutar.</p>
+                </div>
+                <button onclick="unirseTema('Recibir Insumos y Comida en Casa')" class="w-full text-slate-950 font-extrabold py-3.5 px-4 rounded-xl transition shadow-sm text-sm bg-emerald-400 hover:bg-emerald-300 border-2 border-slate-900 flex items-center justify-center space-x-2">
+                    <span>🚀 Solicitar entrega a domicilio</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Requisitos Actualizados -->
+    <section id="inscripcion" class="py-20 px-6 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto text-slate-800">
+            <div class="bg-slate-50 p-8 md:p-12 rounded-3xl shadow-sm border-2 border-slate-200">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-extrabold px-4 py-1.5 rounded-full border border-emerald-300">
+                    💡 Requisitos de Inscripción y Beneficios
+                </span>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mt-4 mb-2 text-slate-900">
+                    Pide tu membresía y beneficios en 4 pasos
+                </h2>
+                <p class="text-slate-600 text-base mb-8 max-w-2xl">
+                    Impulsa tu economía y hogar con un proceso transparente evaluado por inteligencia artificial.
+                </p>
+
+                <div class="space-y-6 text-slate-700">
+                    <!-- Paso 1 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-full bg-lime-300 text-slate-950 font-extrabold flex items-center justify-center shrink-0 mt-0.5 shadow-sm border-2 border-slate-900">1</div>
+                        <div>
+                            <h4 class="font-extrabold text-lg text-slate-900">1. Haz clic en pedir capacitación y te daremos tu membresía</h4>
+                            <p class="text-slate-600 text-sm">Inicia tu proceso formativo dentro de la red Green Tech y obtén acceso inmediato a todos los beneficios.</p>
+                        </div>
+                    </div>
+
+                    <!-- Paso 2 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-full bg-lime-300 text-slate-950 font-extrabold flex items-center justify-center shrink-0 mt-0.5 shadow-sm border-2 border-slate-900">2</div>
+                        <div>
+                            <h4 class="font-extrabold text-lg text-slate-900">2. Registra hortalizas y platos que venderás desde casa</h4>
+                            <p class="text-slate-600 text-sm">Detalla los productos de tu huerto urbano o tus platillos gastronómicos listos para ofrecer a los clientes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Paso 3 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-full bg-lime-300 text-slate-950 font-extrabold flex items-center justify-center shrink-0 mt-0.5 shadow-sm border-2 border-slate-900">3</div>
+                        <div>
+                            <h4 class="font-extrabold text-lg text-slate-900">3. Accede a crédito de artículos domésticos</h4>
+                            <p class="text-slate-600 text-sm">Completa tus datos personales y de actividad. Sube una foto o video corto donde se vea tu labor diaria en cocina o producción para evaluarte con inteligencia artificial y ofrecerte soluciones justas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Paso 4 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-full bg-lime-300 text-slate-950 font-extrabold flex items-center justify-center shrink-0 mt-0.5 shadow-sm border-2 border-slate-900">4</div>
+                        <div>
+                            <h4 class="font-extrabold text-lg text-slate-900">4. Deja los datos para el acceso y listo</h4>
+                            <p class="text-slate-600 text-sm">Nuestro equipo se encarga de procesar tu solicitud de manera inmediata para conectarte con la red.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Cuenta / Iniciar Sesión -->
+    <section id="login" class="py-16 px-6 max-w-xl mx-auto text-center">
+        <div class="bg-white p-8 rounded-3xl border-2 border-slate-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] text-left">
+            <div class="flex items-center space-x-2 mb-2 text-emerald-700 font-extrabold">
+                <span>🔐</span>
+                <span class="text-xs uppercase tracking-wider">Acceso a tu cuenta</span>
+            </div>
+            <h3 class="font-extrabold text-2xl text-slate-900 mb-1">Iniciar Sesión / Registro</h3>
+            <p class="text-slate-600 text-sm mb-6">Ingresa tu nombre para acceder a tu cuenta y canalizar tus 4 pasos en Green Tech Bolivia:</p>
+            
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-xs font-extrabold text-slate-700 uppercase mb-1">Tu Nombre Completo</label>
+                    <input type="text" id="nombreParticipante" placeholder="Ej. María Elena Silva" class="w-full px-4 py-3.5 rounded-xl border-2 border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-medium">
+                </div>
+                
+                <button onclick="unirseWhatsApp()" class="w-full text-slate-950 font-extrabold py-3.5 px-6 rounded-xl transition shadow-md flex items-center justify-center space-x-2 text-base cursor-pointer bg-lime-300 hover:bg-lime-400 border-2 border-slate-900">
+                    <span>📲 Acceder a Mi Cuenta y Membresía</span>
+                </button>
+            </div>
+            <p class="text-xs text-slate-500 mt-4 text-center">🔒 Acceso seguro, capacitación y membresía evaluada por Inteligencia Artificial.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 px-6 border-t border-slate-800 text-center text-sm">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="flex items-center space-x-2">
+                <span class="font-extrabold text-white">GREEN TECH BOLIVIA</span>
+                <span class="text-slate-400">&copy; 2026. Todos los derechos reservados.</span>
+            </div>
+            <div class="flex space-x-6 text-xs text-slate-300 font-medium">
+                <a href="#modelo" class="hover:text-lime-300">🌿 Modelo</a>
+                <a href="#cocina" class="hover:text-lime-300">🍳 Cocina</a>
+                <a href="#verduras" class="hover:text-lime-300">🥦 Verduras</a>
+                <a href="https://www.facebook.com/share/1CJmxtSTKG/" target="_blank" class="hover:text-blue-400 text-blue-300 font-bold">👥 Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script con el enlace del grupo de WhatsApp oficial -->
+    <script>
+        function unirseWhatsApp() {
+            const nombre = document.getElementById('nombreParticipante').value.trim();
+            const enlaceGrupo = "https://chat.whatsapp.com/HbVdxQJy6M71owUp2K0ZxG";
+            
+            if (nombre !== "") {
+                // Si el usuario ingresó su nombre, abre directo el grupo de WhatsApp
+                window.open(enlaceGrupo, '_blank');
+            } else {
+                // Si no puso su nombre, redirige al grupo de todas formas con aviso amigable
+                window.open(enlaceGrupo, '_blank');
+            }
+        }
+
+        function unirseTema(tema) {
+            const enlaceGrupo = "https://chat.whatsapp.com/HbVdxQJy6M71owUp2K0ZxG";
+            window.open(enlaceGrupo, '_blank');
+        }
+    </script>
+</body>
+</html>
